@@ -1,0 +1,49 @@
+{
+  "profiles": {
+    "timing_sl": {
+      "MAX_BATCH_CELLS": "512",
+      "MAX_HOLD_BUFFERS": "1024",
+      "NUM_CORES": "8",
+      "VT_PATH_COUNT": "100",
+      "VT_REFRESH_BATCHES": "0",
+      "VT_STRATEGY": "batch",
+      "VT_ORDER": "timing",
+      "VT_TARGET": "SL",
+      "VT_BATCH_SIZE": "64",
+      "MAX_VT_TRIALS": "8"
+    },
+    "sensitivity": {
+      "MAX_BATCH_CELLS": "512",
+      "MAX_HOLD_BUFFERS": "1024",
+      "NUM_CORES": "8",
+      "VT_PATH_COUNT": "500",
+      "VT_REFRESH_BATCHES": "0",
+      "VT_STRATEGY": "batch",
+      "VT_ORDER": "sensitivity",
+      "VT_TARGET": "SL",
+      "VT_BATCH_SIZE": "64",
+      "MAX_VT_TRIALS": "8"
+    },
+    "sensitivity_refresh": {
+      "MAX_BATCH_CELLS": "512",
+      "MAX_HOLD_BUFFERS": "1024",
+      "NUM_CORES": "8",
+      "VT_PATH_COUNT": "500",
+      "VT_REFRESH_BATCHES": "2",
+      "VT_STRATEGY": "batch",
+      "VT_ORDER": "sensitivity",
+      "VT_TARGET": "SL",
+      "VT_BATCH_SIZE": "64",
+      "MAX_VT_TRIALS": "8"
+    }
+  },
+  "designs": [
+    "aes",
+    "jpeg"
+  ],
+  "source_sha256": {
+    "optimizer.tcl": "a0f7875d90107007754946ca61cc62f8c15cac673e972429d2ee04ad8c09228a",
+    "run.sh": "07bf934ec7137d1b3ae09a903f65677eccccd7fbafa800753983eb74d5cc6919",
+    "sweep.py": "6ae030b33b9ef404a309a76239646b155d23690ef58b001aa715409a1a79d119"
+  }
+}

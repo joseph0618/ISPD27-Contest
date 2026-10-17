@@ -1,0 +1,137 @@
+{
+  "score": 0.44713027095683155,
+  "higher_is_better": true,
+  "status": "provisional",
+  "components": {
+    "ppa": 0.3547004116410216,
+    "hold_penalty": 0.0,
+    "erc_penalty": -0.017614521256897837,
+    "runtime_penalty": -0.024823390380245884,
+    "displacement_penalty": -0.04999194767866623,
+    "overflow_penalty": 0.0
+  },
+  "scenarios": {
+    "BC": {
+      "weight": 0.3333333333333333,
+      "weighted_terms": {
+        "setup_tns": 0.10876014058670805,
+        "hold_tns": 0.0,
+        "setup_wns": 0.19981897474093555,
+        "hold_wns": 0.0,
+        "dynamic_power": -0.000623202301054648,
+        "leakage_power": -0.0015393386545039895,
+        "slew": 0.0,
+        "cap": 0.0,
+        "fanout": 0.0
+      }
+    },
+    "TC": {
+      "weight": 0.3333333333333333,
+      "weighted_terms": {
+        "setup_tns": 0.1368327546112585,
+        "hold_tns": 0.0,
+        "setup_wns": 0.24615558379191851,
+        "hold_wns": 0.0,
+        "dynamic_power": -0.0005066497783407278,
+        "leakage_power": -0.0014814814814814775,
+        "slew": 0.0,
+        "cap": 0.0,
+        "fanout": 0.0
+      }
+    },
+    "WC": {
+      "weight": 0.3333333333333333,
+      "weighted_terms": {
+        "setup_tns": 0.13950373953839296,
+        "hold_tns": 0.0,
+        "setup_wns": 0.23930983853688675,
+        "hold_wns": 0.0,
+        "dynamic_power": -0.0005778120184899851,
+        "leakage_power": -0.0015513126491646769,
+        "slew": -0.05284356377069352,
+        "cap": 0.0,
+        "fanout": 0.0
+      }
+    }
+  },
+  "config": {
+    "status": "provisional",
+    "weights": {
+      "setup_tns": 1.0,
+      "setup_wns": 1.0,
+      "dynamic_power": 0.05,
+      "leakage_power": 0.05,
+      "hold_tns": 1.0,
+      "hold_wns": 1.0,
+      "slew": 0.1,
+      "cap": 0.1,
+      "fanout": 0.1,
+      "tool_runtime": 0.05,
+      "flow_runtime": 0.05,
+      "displacement": 0.05,
+      "max_overflow": 1.0,
+      "total_overflow": 1.0
+    },
+    "scenarios": {
+      "BC": {
+        "weight": 0.3333333333333333,
+        "hold_tns_tolerance_ns": 1.0,
+        "hold_wns_tolerance_ns": 0.01
+      },
+      "TC": {
+        "weight": 0.3333333333333333,
+        "hold_tns_tolerance_ns": 1.0,
+        "hold_wns_tolerance_ns": 0.01
+      },
+      "WC": {
+        "weight": 0.3333333333333333,
+        "hold_tns_tolerance_ns": 1.0,
+        "hold_wns_tolerance_ns": 0.01
+      }
+    },
+    "epsilon": {
+      "time_ns": 1e-06,
+      "slew_ps": 0.001,
+      "cap_ff": 1e-06,
+      "fanout": 1e-06,
+      "displacement_um": 1e-06,
+      "overflow": 1e-06
+    },
+    "overflow_thresholds": {
+      "max": 0.0,
+      "total": 0.0
+    }
+  },
+  "runtimes": {
+    "tool_s": 116.68665984599647,
+    "flow_s": 313.776205907001,
+    "reference_tool_s": 139.465,
+    "reference_flow_s": 470.5287286732346
+  },
+  "eligibility": "design_and_runtime_checks_passed",
+  "note": "Numerical Section 3.3.1 score only; mandatory legality checks and ranking remain separate.",
+  "design": "jpeg",
+  "configuration": "jpeg_p55_h35",
+  "inputs": {
+    "baseline": {
+      "path": "/workspace/evaluator/reference_results/jpeg/baseline.csv",
+      "sha256": "c806e4aee7a3c839e3e4b620405f993fefe7ae079cf56d3e1686e950263080e0"
+    },
+    "candidate": {
+      "path": "/tmp/ispd27-research-sweep-20261017/sensitivity_refresh/jpeg/evaluation/summary.csv",
+      "sha256": "0eea7f3865526b34340d52f5fcf4c61549a6c2745c20517a7f9ed47096ef5488"
+    },
+    "reference": {
+      "path": "/workspace/evaluator/reference_results/jpeg/resizer.csv",
+      "sha256": "729dc0d9e64b12d86e288a86aea412836727b57844b3ddaf9da12d7704e5c750"
+    },
+    "config": {
+      "path": "/workspace/evaluator/config/scoring_config.json",
+      "sha256": "b06dd4498f35b39c065b5e063d0e26d72262c205f7a2a4abe7d448e1ac35cddf"
+    },
+    "runtimes": {
+      "path": "/tmp/ispd27-research-sweep-20261017/sensitivity_refresh/jpeg/evaluation/runtimes.json",
+      "sha256": "a1cd6cb790d68d1af745fa3912d212d67d1294cbcae095bcfb9e44aa8a34bc26"
+    }
+  }
+}

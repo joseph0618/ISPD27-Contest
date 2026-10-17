@@ -1,0 +1,137 @@
+{
+  "score": 0.4449294329210546,
+  "higher_is_better": true,
+  "status": "provisional",
+  "components": {
+    "ppa": 0.3593637316793389,
+    "hold_penalty": 0.0,
+    "erc_penalty": 0.00047725329789544287,
+    "runtime_penalty": -0.03604985206445358,
+    "displacement_penalty": -0.04999310247515759,
+    "overflow_penalty": 0.0
+  },
+  "scenarios": {
+    "BC": {
+      "weight": 0.3333333333333333,
+      "weighted_terms": {
+        "setup_tns": 0.1575635094805231,
+        "hold_tns": 0.0,
+        "setup_wns": 0.09901524537855769,
+        "hold_wns": 0.0,
+        "dynamic_power": -0.0006000000000000006,
+        "leakage_power": -0.004526748971193414,
+        "slew": 0.0,
+        "cap": 0.0,
+        "fanout": 0.0
+      }
+    },
+    "TC": {
+      "weight": 0.3333333333333333,
+      "weighted_terms": {
+        "setup_tns": 0.22023903447000168,
+        "hold_tns": 0.0,
+        "setup_wns": 0.16479192713580237,
+        "hold_wns": 0.0,
+        "dynamic_power": -0.0003492745835572336,
+        "leakage_power": -0.004509283819628649,
+        "slew": 0.0,
+        "cap": 0.0,
+        "fanout": 0.0
+      }
+    },
+    "WC": {
+      "weight": 0.3333333333333333,
+      "weighted_terms": {
+        "setup_tns": 0.2583913133883955,
+        "hold_tns": 0.0,
+        "setup_wns": 0.19284291536857306,
+        "hold_wns": 0.0,
+        "dynamic_power": -0.0005480335267569334,
+        "leakage_power": -0.004219409282700428,
+        "slew": 0.0014317598936863286,
+        "cap": 0.0,
+        "fanout": 0.0
+      }
+    }
+  },
+  "config": {
+    "status": "provisional",
+    "weights": {
+      "setup_tns": 1.0,
+      "setup_wns": 1.0,
+      "dynamic_power": 0.05,
+      "leakage_power": 0.05,
+      "hold_tns": 1.0,
+      "hold_wns": 1.0,
+      "slew": 0.1,
+      "cap": 0.1,
+      "fanout": 0.1,
+      "tool_runtime": 0.05,
+      "flow_runtime": 0.05,
+      "displacement": 0.05,
+      "max_overflow": 1.0,
+      "total_overflow": 1.0
+    },
+    "scenarios": {
+      "BC": {
+        "weight": 0.3333333333333333,
+        "hold_tns_tolerance_ns": 1.0,
+        "hold_wns_tolerance_ns": 0.01
+      },
+      "TC": {
+        "weight": 0.3333333333333333,
+        "hold_tns_tolerance_ns": 1.0,
+        "hold_wns_tolerance_ns": 0.01
+      },
+      "WC": {
+        "weight": 0.3333333333333333,
+        "hold_tns_tolerance_ns": 1.0,
+        "hold_wns_tolerance_ns": 0.01
+      }
+    },
+    "epsilon": {
+      "time_ns": 1e-06,
+      "slew_ps": 0.001,
+      "cap_ff": 1e-06,
+      "fanout": 1e-06,
+      "displacement_um": 1e-06,
+      "overflow": 1e-06
+    },
+    "overflow_thresholds": {
+      "max": 0.0,
+      "total": 0.0
+    }
+  },
+  "runtimes": {
+    "tool_s": 56.93477043000166,
+    "flow_s": 152.28672419000213,
+    "reference_tool_s": 83.357,
+    "reference_flow_s": 255.52334449253976
+  },
+  "eligibility": "design_and_runtime_checks_passed",
+  "note": "Numerical Section 3.3.1 score only; mandatory legality checks and ranking remain separate.",
+  "design": "aes",
+  "configuration": "aes_p55_h55",
+  "inputs": {
+    "baseline": {
+      "path": "/workspace/evaluator/reference_results/aes/baseline.csv",
+      "sha256": "31c708ef1a8dd56a3ba28af024835339cfb2fbe28d9e9764ee429d62ff433724"
+    },
+    "candidate": {
+      "path": "/tmp/ispd27-research-sweep-20261017/sensitivity_refresh/aes/evaluation/summary.csv",
+      "sha256": "9673ac7ccb5acd67c4543cc1e2d1908fcbcf9f48a02cc216faa1ec4f6656d3aa"
+    },
+    "reference": {
+      "path": "/workspace/evaluator/reference_results/aes/resizer.csv",
+      "sha256": "ee0f7bfbf0ddb4dd96dcbd13c4c0ec68584dea05e02d99e6db786dae9750e2e2"
+    },
+    "config": {
+      "path": "/workspace/evaluator/config/scoring_config.json",
+      "sha256": "b06dd4498f35b39c065b5e063d0e26d72262c205f7a2a4abe7d448e1ac35cddf"
+    },
+    "runtimes": {
+      "path": "/tmp/ispd27-research-sweep-20261017/sensitivity_refresh/aes/evaluation/runtimes.json",
+      "sha256": "b664e1d0c0bf1dc5610909a93d3ca39009dc9ba51bd3b29eb0a9d1727fc07521"
+    }
+  }
+}

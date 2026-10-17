@@ -1,0 +1,53 @@
+{
+  "profiles": {
+    "fanout_l": {
+      "MAX_BATCH_CELLS": "512",
+      "MAX_HOLD_BUFFERS": "1024",
+      "NUM_CORES": "8",
+      "VT_STRATEGY": "batch",
+      "VT_ORDER": "fanout",
+      "VT_TARGET": "L",
+      "VT_BATCH_SIZE": "128",
+      "MAX_VT_TRIALS": "8"
+    },
+    "fanout_sl": {
+      "MAX_BATCH_CELLS": "512",
+      "MAX_HOLD_BUFFERS": "1024",
+      "NUM_CORES": "8",
+      "VT_STRATEGY": "batch",
+      "VT_ORDER": "fanout",
+      "VT_TARGET": "SL",
+      "VT_BATCH_SIZE": "128",
+      "MAX_VT_TRIALS": "8"
+    },
+    "timing_sl": {
+      "MAX_BATCH_CELLS": "512",
+      "MAX_HOLD_BUFFERS": "1024",
+      "NUM_CORES": "8",
+      "VT_STRATEGY": "batch",
+      "VT_ORDER": "timing",
+      "VT_TARGET": "SL",
+      "VT_BATCH_SIZE": "64",
+      "MAX_VT_TRIALS": "8"
+    },
+    "control": {
+      "MAX_BATCH_CELLS": "512",
+      "MAX_HOLD_BUFFERS": "1024",
+      "NUM_CORES": "8",
+      "VT_STRATEGY": "serial",
+      "VT_ORDER": "timing",
+      "VT_TARGET": "SL",
+      "VT_BATCH_SIZE": "128",
+      "MAX_VT_TRIALS": "10"
+    }
+  },
+  "designs": [
+    "aes",
+    "jpeg"
+  ],
+  "source_sha256": {
+    "optimizer.tcl": "a1713a5bebb1d06fee7a463a20d1a36a348f4d71fa3fb09b33061b71eb9fcda4",
+    "run.sh": "df9d4b0aed64ec77283c72d77810a66224907871702ac49c0717ec909e1d9bd5",
+    "sweep.py": "2902d130a73b5357fba065eb490dd2f702f11eda9252fe34650f831ba6b4086d"
+  }
+}
